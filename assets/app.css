@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  /* background-color: #fff3fc; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-warni {
+  color: linear-gradient(to bottom, #f21eb7, #f24e1e);
+}
+
+/* .kategori {
+  font-family: "Bevan", sans-serif;
+  font-weight: normal;
+  font-size: 100px;
+} */
+
+.bg-custom {
+  background-color: #c5cae9;
+}
+
+.navbar {
+  z-index: 50;
+}
+.carousel-item {
+  transition: opacity 0.7s ease-in-out;
+}
+.carousel-item-active {
+  opacity: 1;
+}
+.carousel-item-inactive {
+  opacity: 0;
+}
+
+.navbar-scrolled {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-scrolled li a {
+  color: black !important;
+}
+
+.navbar-scrolled ul li a {
+  color: black !important;
+}
+
+/* Warna teks saat di-hover */
+.navbar-scrolled ul li a:hover {
+  color: black !important;
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+.navbar ul li:hover a {
+  color: black; /* Ganti dengan warna biru yang diinginkan */
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+
+/* Navbar */
+
+
+    /* Sidebar overlay */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0; /* Atur posisi overlay di sebelah kanan */
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 49;
+    }
+
+    .sidebar-overlay.show {
+      display: block;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      transform: translateX(100%); /* Mulai dari luar layar */
+      transition: transform 0.3s ease-in-out;
+      position: fixed;
+      top: 0;
+      right: 0; /* Atur posisi sidebar di sebelah kanan */
+      width: 280px; /* Atur lebar sidebar sesuai kebutuhan */
+      height: 100%;
+      background-color: #ffffff; /* Ubah warna latar belakang sidebar sesuai kebutuhan */
+      z-index: 50;
+      padding: 20px;
+    }
+
+    .sidebar.show {
+      transform: translateX(0); /* Geser masuk saat ditampilkan */
+    }
